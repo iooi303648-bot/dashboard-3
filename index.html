@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3학년 대시보드 안내 카드뉴스</title>
+    <link href="https://fonts.googleapis.com/css2?family=Jua&family=Noto+Sans+KR:wght@300;400;500;700;900&family=Montserrat:wght@600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css?v=grade3-20260630">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+</head>
+<body>
+    <header class="app-header">
+        <div class="header-container">
+            <div class="logo-area">
+                <span class="logo-emoji">🌱</span>
+                <div>
+                    <h1>3학년 대시보드 안내 카드뉴스</h1>
+                    <p>3학년 학생용 수학 학습 결과 확인 가이드</p>
+                </div>
+            </div>
+            <button id="download-all-btn" class="cute-btn primary">
+                <span class="btn-icon">📥</span> 전체 카드 다운로드하기
+            </button>
+        </div>
+    </header>
+
+    <main class="app-container">
+        <div class="slider-outer-container">
+            <button id="prev-btn" class="nav-arrow-btn" aria-label="이전 카드">‹</button>
+
+            <div class="slider-container">
+                <div class="slider-track" id="slider-track">
+                    <section class="card-slide card-theme-title" id="card-1">
+                        <div class="card-decorations">
+                            <span class="decor-star star-1">✦</span>
+                            <span class="decor-star star-2">✦</span>
+                            <span class="decor-cloud cloud-1">구름</span>
+                        </div>
+                        <div class="card-badge">AI 디지털 교육자료 포털</div>
+                        <div class="card-title-content">
+                            <h2 class="title-sub">나의 수학 공부를 한눈에!</h2>
+                            <h1 class="title-main">3학년 대시보드<br><span class="highlight-yellow">확인하기!</span></h1>
+                            <p class="title-desc">완료한 활동, 정답률, 다시 볼 내용을<br>쉽고 차근차근 살펴보아요.</p>
+                        </div>
+                        <div class="card-footer">
+                            <span class="footer-tag">3학년 학생용 안내</span>
+                            <span class="page-number">1 / 10</span>
+                        </div>
+                    </section>
+
+                    <section class="card-slide card-theme-step" id="card-2">
+                        <div class="card-header">
+                            <span class="step-badge">STEP 1</span>
+                            <h2 class="step-title">포털에 로그인해요</h2>
+                        </div>
+                        <div class="card-body">
+                            <p class="body-intro">AI 디지털 교육자료 포털에 들어가 수학 교육자료를 선택해요.</p>
+                            <div class="flow-container">
+                                <div class="flow-box bg-peach">
+                                    <span class="flow-num">1</span>
+                                    <div class="flow-text"><strong>포털 로그인</strong><br>내 계정으로 접속해요.</div>
+                                </div>
+                                <div class="flow-arrow">→</div>
+                                <div class="flow-box bg-mint">
+                                    <span class="flow-num">2</span>
+                                    <div class="flow-text"><strong>수학 교육자료 홈</strong><br>수학 화면으로 이동해요.</div>
+                                </div>
+                            </div>
+                            <div class="cute-tip bg-yellow">
+                                <span class="tip-icon">💡</span>
+                                <p class="tip-text">처음에는 선생님이 알려준 방법대로 천천히 따라 들어가면 돼요.</p>
+                            </div>
+                        </div>
+                        <div class="card-footer">
+                            <span class="footer-subtitle">AI 디지털 교육자료 포털 · 수학 교육자료</span>
+                            <span class="page-number">2 / 10</span>
+                        </div>
+                    </section>
+
+                    <section class="card-slide card-theme-step" id="card-3">
+                        <div class="card-header">
+                            <span class="step-badge">STEP 2</span>
+                            <h2 class="step-title">대시보드 메뉴를 찾아요</h2>
+                        </div>
+                        <div class="card-body">
+                            <p class="body-intro">수학 교육자료 홈 왼쪽 메뉴에서 대시보드를 눌러요.</p>
+                            <div class="bubble-chat">
+                                <div class="cute-character">🙂</div>
+                                <div class="chat-bubble">"<strong>대시보드</strong>에서는 내가 공부한 결과를 한곳에서 볼 수 있어!"</div>
+                            </div>
+                            <div class="click-guide-box">
+                                <span class="arrow-indicator">➜</span>
+                                <div class="click-path">수업 공간 → <span class="highlight-click">대시보드</span></div>
+                                <span class="click-finger">👆</span>
+                            </div>
+                        </div>
+                        <div class="card-footer">
+                            <span class="footer-subtitle">AI 디지털 교육자료 포털 · 수학 교육자료</span>
+                            <span class="page-number">3 / 10</span>
+                        </div>
+                    </section>
+
+                    <section class="card-slide card-theme-step" id="card-4">
+                        <div class="card-header">
+                            <span class="step-badge">STEP 3</span>
+                            <h2 class="step-title">내 학습 현황을 봐요</h2>
+                        </div>
+                        <div class="card-body">
+                            <p class="body-intro">숫자와 그래프로 나의 학습 상황을 확인할 수 있어요.</p>
+                            <div class="screen-mockup">
+                                <img src="images/dashboard_main.png" alt="대시보드 메인 화면" class="mockup-img">
+                            </div>
+                            <div class="cute-tip bg-lavender">
+                                <span class="tip-icon">📊</span>
+                                <p class="tip-text">완료율, 평균 정답률, 활동 완료율을 보며 오늘 공부를 돌아봐요.</p>
+                            </div>
+                        </div>
+                        <div class="card-footer">
+                            <span class="footer-subtitle">AI 디지털 교육자료 포털 · 수학 교육자료</span>
+                            <span class="page-number">4 / 10</span>
+                        </div>
+                    </section>
+
+                    <section class="card-slide card-theme-step" id="card-5">
+                        <div class="card-header">
+                            <span class="step-badge-warning">STEP 4</span>
+                            <h2 class="step-title text-orange">완료율은 참고 자료예요</h2>
+                        </div>
+                        <div class="card-body">
+                            <p class="body-intro">대시보드 수치는 디지털 자료에서 한 활동을 기준으로 보여줘요.</p>
+                            <div class="worry-box">
+                                <div class="worry-comparison">
+                                    <div class="worry-item">
+                                        <span class="worry-emoji">📘</span>
+                                        <p>교과서나 활동지로<br>공부한 내용</p>
+                                    </div>
+                                    <div class="worry-not-equal">≠</div>
+                                    <div class="worry-item">
+                                        <span class="worry-emoji">🖥️</span>
+                                        <p>대시보드에<br>보이는 수치</p>
+                                    </div>
+                                </div>
+                                <div class="speech-bubble bg-yellow">
+                                    <strong>완료율이 낮아도 괜찮아요!</strong>
+                                    <p>아직 끝내지 않은 디지털 활동이 있는지 확인하고, 필요한 활동부터 다시 해보면 돼요.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-footer">
+                            <span class="footer-subtitle">AI 디지털 교육자료 포털 · 수학 교육자료</span>
+                            <span class="page-number">5 / 10</span>
+                        </div>
+                    </section>
+
+                    <section class="card-slide card-theme-step" id="card-6">
+                        <div class="card-header">
+                            <span class="step-badge">STEP 5</span>
+                            <h2 class="step-title">이해한 내용을 확인해요</h2>
+                        </div>
+                        <div class="card-body">
+                            <p class="body-intro">지식 달성 현황에서 어떤 개념을 잘 이해했는지 살펴봐요.</p>
+                            <div class="knowledge-cards">
+                                <div class="k-item">
+                                    <span class="k-badge bg-green">달성</span>
+                                    <p>잘 이해한 내용이에요.</p>
+                                </div>
+                                <div class="k-item">
+                                    <span class="k-badge bg-purple">도전</span>
+                                    <p>한 번 더 연습하면 좋아요.</p>
+                                </div>
+                                <div class="k-item">
+                                    <span class="k-badge bg-orange">기록 없음</span>
+                                    <p>아직 확인할 활동이 적어요.</p>
+                                </div>
+                            </div>
+                            <div class="cute-tip bg-mint">
+                                <span class="tip-icon">✅</span>
+                                <p class="tip-text">초록색이 많아질수록 내가 이해한 내용이 늘어나는 거예요.</p>
+                            </div>
+                        </div>
+                        <div class="card-footer">
+                            <span class="footer-subtitle">AI 디지털 교육자료 포털 · 수학 교육자료</span>
+                            <span class="page-number">6 / 10</span>
+                        </div>
+                    </section>
+
+                    <section class="card-slide card-theme-step" id="card-7">
+                        <div class="card-header">
+                            <span class="step-badge">STEP 6</span>
+                            <h2 class="step-title">단원과 차시를 골라요</h2>
+                        </div>
+                        <div class="card-body">
+                            <p class="body-intro">확인하고 싶은 단원과 차시를 선택해 자세한 결과를 봐요.</p>
+                            <div class="screen-mockup detail-large">
+                                <img src="images/curriculum_collapsed.png" alt="접힌 단원 목록 화면" class="mockup-img">
+                            </div>
+                            <div class="cute-tip bg-blue">
+                                <span class="tip-icon">🔎</span>
+                                <p class="tip-text">오늘 배운 차시부터 확인하면 가장 쉽게 찾을 수 있어요.</p>
+                            </div>
+                        </div>
+                        <div class="card-footer">
+                            <span class="footer-subtitle">AI 디지털 교육자료 포털 · 수학 교육자료</span>
+                            <span class="page-number">7 / 10</span>
+                        </div>
+                    </section>
+
+                    <section class="card-slide card-theme-step" id="card-8">
+                        <div class="card-header">
+                            <span class="step-badge">STEP 7</span>
+                            <h2 class="step-title">활동별 결과를 봐요</h2>
+                        </div>
+                        <div class="card-body">
+                            <p class="body-intro">문제, 활동, 학습 결과가 차시별로 정리되어 있어요.</p>
+                            <div class="screen-mockup detail-large">
+                                <img src="images/curriculum_expanded.png" alt="펼친 차시 결과 화면" class="mockup-img">
+                            </div>
+                            <div class="cute-tip bg-lavender">
+                                <span class="tip-icon">📝</span>
+                                <p class="tip-text">아직 하지 않은 활동이 보이면 수업 시간이나 복습 시간에 이어서 해요.</p>
+                            </div>
+                        </div>
+                        <div class="card-footer">
+                            <span class="footer-subtitle">AI 디지털 교육자료 포털 · 수학 교육자료</span>
+                            <span class="page-number">8 / 10</span>
+                        </div>
+                    </section>
+
+                    <section class="card-slide card-theme-step" id="card-9">
+                        <div class="card-header">
+                            <span class="step-badge">STEP 8</span>
+                            <h2 class="step-title">정답률을 확인해요</h2>
+                        </div>
+                        <div class="card-body">
+                            <p class="body-intro">그래프를 보며 어떤 수업을 다시 보면 좋을지 찾아요.</p>
+                            <div class="screen-mockup detail-large">
+                                <img src="images/correct_rate_graph.png" alt="수업별 정답률 그래프" class="mockup-img">
+                            </div>
+                            <div class="cute-tip bg-yellow">
+                                <span class="tip-icon">📍</span>
+                                <p class="tip-text">동그란 점을 살펴보면 수업별 정답률을 더 자세히 알 수 있어요.</p>
+                            </div>
+                        </div>
+                        <div class="card-footer">
+                            <span class="footer-subtitle">AI 디지털 교육자료 포털 · 수학 교육자료</span>
+                            <span class="page-number">9 / 10</span>
+                        </div>
+                    </section>
+
+                    <section class="card-slide" id="card-10" style="background-color: #ffffff; color: var(--text-main); border-color: var(--color-border);">
+                        <div class="card-header" style="border-bottom-color: #e2e8f0;">
+                            <span class="step-badge" style="background-color: var(--pastel-yellow); color: var(--text-main); border: 2px solid var(--color-border);">FINISH</span>
+                            <h2 class="step-title" style="color: var(--text-main);">대시보드로 스스로 공부해요!</h2>
+                        </div>
+                        <div class="card-body" style="gap: 8px; margin: 10px 0;">
+                            <p class="body-intro" style="color: var(--text-muted);">결과를 보고 오늘 할 일을 하나씩 정해봐요.</p>
+                            <div class="screen-mockup">
+                                <img src="images/learning_results_list.png" alt="활동별 학습 결과 목록" class="mockup-img">
+                            </div>
+                            <div class="ending-tips" style="display: flex; flex-direction: column; gap: 5px; margin: 5px 0; width: 100%;">
+                                <div class="e-tip-item" style="padding: 6px 12px; background-color: var(--pastel-blue); border: 2px solid var(--color-border); border-radius: 14px; display: flex; align-items: center; gap: 12px;">
+                                    <span class="e-emoji" style="font-size: 1.2rem;">🌟</span>
+                                    <p style="font-size: 0.8rem; color: var(--text-main); margin: 0; font-weight: bold;">완료하지 않은 활동 먼저 끝내기</p>
+                                </div>
+                                <div class="e-tip-item" style="padding: 6px 12px; background-color: var(--pastel-blue); border: 2px solid var(--color-border); border-radius: 14px; display: flex; align-items: center; gap: 12px;">
+                                    <span class="e-emoji" style="font-size: 1.2rem;">💪</span>
+                                    <p style="font-size: 0.8rem; color: var(--text-main); margin: 0; font-weight: bold;">어려웠던 문제를 다시 풀어보기</p>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="ending-cheer" style="font-size: 0.95rem; margin-top: 2px; text-align: center; color: #b45309; font-weight: bold;">3학년 수학 공부도 차근차근 해낼 수 있어요!</p>
+                        <div class="card-footer" style="border-top-color: #e2e8f0; display: flex; justify-content: space-between; align-items: center; width: 100%;">
+                            <span class="footer-tag" style="background-color: var(--pastel-lavender); color: var(--text-main); border: 1.5px solid var(--color-border); padding: 4px 10px; border-radius: 8px; font-size: 0.75rem;">오늘의 미션 완료</span>
+                            <span class="page-number" style="box-shadow: 1.5px 1.5px 0 var(--color-border); color: var(--text-main); background-color: var(--pastel-yellow);">10 / 10</span>
+                        </div>
+                    </section>
+                </div>
+            </div>
+
+            <button id="next-btn" class="nav-arrow-btn" aria-label="다음 카드">›</button>
+        </div>
+
+        <div class="slider-dots-container">
+            <div class="slider-dots" id="slider-dots"></div>
+        </div>
+    </main>
+
+    <footer class="app-footer">
+        <p>© AI 디지털 교육자료 포털 3학년 대시보드 안내</p>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
