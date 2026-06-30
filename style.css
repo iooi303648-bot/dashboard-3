@@ -2,25 +2,25 @@
 
 :root {
     /* Playful Cute Color Palette */
-    --color-bg-app: #f5f3ff;
+    --color-bg-app: #fff7ed;
     --color-border: #1e293b;
     
     /* Card Backgrounds */
-    --card-bg-title: linear-gradient(135deg, #a78bfa 0%, #7c3aed 100%);
-    --card-bg-title-ending: linear-gradient(135deg, #818cf8 0%, #4f46e5 100%);
+    --card-bg-title: linear-gradient(135deg, #fb923c 0%, #ea580c 100%);
+    --card-bg-title-ending: linear-gradient(135deg, #fdba74 0%, #f97316 100%);
     --card-bg-step: #ffffff;
     
     /* Pastel Accent Colors */
-    --pastel-yellow: #fef08a;
+    --pastel-yellow: #fef3c7;
     --pastel-peach: #ffedd5;
     --pastel-peach-dark: #fed7aa;
-    --pastel-mint: #d1fae5;
-    --pastel-mint-dark: #a7f3d0;
-    --pastel-lavender: #ede9fe;
-    --pastel-lavender-dark: #ddd6fe;
-    --pastel-blue: #e0f2fe;
-    --pastel-blue-dark: #bae6fd;
-    --pastel-cream: #fafaf9;
+    --pastel-mint: #dcfce7;
+    --pastel-mint-dark: #bbf7d0;
+    --pastel-lavender: #fed7aa;
+    --pastel-lavender-dark: #fdba74;
+    --pastel-blue: #fde68a;
+    --pastel-blue-dark: #fcd34d;
+    --pastel-cream: #fffaf0;
     
     /* Text Colors */
     --text-main: #1e293b;
@@ -80,7 +80,7 @@ body {
 .logo-area h1 {
     font-family: var(--font-heading);
     font-size: 1.8rem;
-    color: #4f46e5;
+    color: #ea580c;
 }
 
 .logo-area p {
@@ -194,7 +194,7 @@ body {
 .title-sub {
     font-family: var(--font-heading);
     font-size: 1.4rem;
-    color: #e0e7ff;
+    color: #ffedd5;
     margin-bottom: 8px;
     text-shadow: 1px 1px 0px rgba(0,0,0,0.15);
 }
@@ -226,7 +226,7 @@ body {
 .title-desc {
     font-size: 1.05rem;
     line-height: 1.5;
-    color: #f3e8ff;
+    color: #fff7ed;
 }
 
 .card-decorations {
@@ -266,7 +266,7 @@ body {
 
 .step-badge {
     font-family: var(--font-heading);
-    background-color: #8b5cf6;
+    background-color: #f97316;
     color: #ffffff;
     padding: 4px 12px;
     border-radius: 10px;
@@ -375,7 +375,7 @@ body {
 /* BUBBLE CHAT (Step 2 Layout) */
 .bubble-chat {
     display: flex;
-    gap: 15px;S
+    gap: 15px;
     align-items: center;
     margin: 10px 0;
 }
@@ -444,7 +444,7 @@ body {
 }
 
 .highlight-click {
-    color: #4f46e5;
+    color: #ea580c;
     background-color: var(--pastel-yellow);
     padding: 2px 8px;
     border-radius: 6px;
@@ -733,7 +733,7 @@ body {
 .bg-yellow { background-color: var(--pastel-yellow); }
 
 .bg-green { background-color: #86efac; color: #065f46; }
-.bg-purple { background-color: #c084fc; color: #581c87; }
+.bg-purple { background-color: #fed7aa; color: #9a3412; }
 .bg-orange { background-color: #fdba74; color: #7c2d12; }
 
 /* Animations */
@@ -794,7 +794,7 @@ body {
 .split-arrow {
     font-size: 1.5rem;
     font-family: var(--font-heading);
-    color: #8b5cf6;
+    color: #f97316;
     animation: pulse 1.5s infinite;
 }
 
@@ -859,7 +859,7 @@ body {
 }
 
 .slider-dot.active {
-    background-color: #8b5cf6;
+    background-color: #f97316;
     transform: scale(1.25);
     box-shadow: 2px 2px 0px var(--color-border);
 }
