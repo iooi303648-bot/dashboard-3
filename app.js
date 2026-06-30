@@ -1,4 +1,4 @@
-// Card news slider and export system for the grade 3 dashboard guide.
+// Card news slider and export system for the Icecream AI digital learning material dashboard guide.
 
 document.addEventListener('DOMContentLoaded', () => {
     const track = document.getElementById('slider-track');
@@ -89,7 +89,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
                     const link = document.createElement('a');
                     link.href = canvas.toDataURL('image/png');
-                    link.download = `3학년_대시보드_안내_카드_${String(i + 1).padStart(2, '0')}.png`;
+                    link.download = `아이스크림_AI_디지털_교육자료_대시보드_안내_카드_${String(i + 1).padStart(2, '0')}.png`;
                     document.body.appendChild(link);
                     link.click();
                     document.body.removeChild(link);
